@@ -511,6 +511,58 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1 &348507164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 348507166}
+  - component: {fileID: 348507165}
+  m_Layer: 0
+  m_Name: Effect Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &348507165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348507164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae1eb61a2107ee45b68ed00ebfc7c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effects:
+  - {fileID: 2100000, guid: 3f67427508505064eb896580888467f1, type: 2}
+  - {fileID: 2100000, guid: 2bb74f3d1a4a4c848a1de67a93629873, type: 2}
+  - {fileID: 2100000, guid: 45b29b7c78edd714aa37c9f0baa62aba, type: 2}
+  characterMs:
+  - {fileID: 549633920}
+  - {fileID: 566080804}
+  character: {fileID: 2078193725}
+--- !u!4 &348507166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348507164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &384533904
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,7 +646,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 384533907}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 348507165}
+        m_TargetAssemblyTypeName: EffectManager, Assembly-CSharp
+        m_MethodName: Glitch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &384533907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,6 +968,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456403876}
   m_CullTransparentMesh: 1
+--- !u!137 &549633920 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3853268898807207900, guid: 732231064d22d894087e7252bf2945e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2078193724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &566080804 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6148737315974723067, guid: 732231064d22d894087e7252bf2945e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2078193724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &753303831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,7 +1574,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 897096975}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 348507165}
+        m_TargetAssemblyTypeName: EffectManager, Assembly-CSharp
+        m_MethodName: Laser
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &897096975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1742,7 +1830,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 931190707}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 348507165}
+        m_TargetAssemblyTypeName: EffectManager, Assembly-CSharp
+        m_MethodName: Dissolve
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &931190707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2101,7 +2201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Effect 2
+  m_text: Effect 2 - Dissolve
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2236,7 +2336,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Effect 1
+  m_text: Effect 1 - Laser
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2506,7 +2606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Effect 3
+  m_text: Effect 3 - Glitch
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
