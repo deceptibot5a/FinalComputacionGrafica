@@ -10,7 +10,7 @@ public class EffectManager : MonoBehaviour
 
 
     public void Laser() {
-        character.GetComponent<Animator>().SetBool("IsAttacking", true);
+        character.GetComponent<Animator>().SetTrigger("IsAttacking");
         for (int i = 0; i < characterMs.Count; i++) {
             characterMs[i].material = effects[0];
         }
