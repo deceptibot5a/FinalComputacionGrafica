@@ -2,10 +2,12 @@
  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
  public class DissolveScript : MonoBehaviour
  {
-     [Header("Dissolve")]
+    [Header("Dissolve")]
+    [SerializeField] private AudioSource Adissolve;
      [SerializeField] private float dissolveSpeed = 1;
      [SerializeField] private float dissolveWait = 1;
      [Space] 
@@ -37,12 +39,15 @@ using UnityEngine;
       if (Input.GetKeyDown(KeyCode.Space) && !isDissolving)
       {
        StartCoroutine(MakeDissolve());
+            Adissolve.Play();
       }
      }
 
      private IEnumerator MakeDissolve()
      {
       isDissolving = true;
+
+
 
       dissolveValue = startValue;
       

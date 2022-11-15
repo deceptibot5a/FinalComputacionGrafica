@@ -50,9 +50,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _DIRECTION: 4
-    - _DISSOLVE: 1.038178
+    - _DISSOLVE: 1.0156121
     - _Dissolve: 0.97
-    - _Edge_Width: 0.401
+    - _Edge_Width: 0.242
     - _Noise_Scale: 60.6
     - _Noise_Strength: 2.9
     - _QueueControl: 0
