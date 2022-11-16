@@ -29,21 +29,17 @@ using UnityEngine.Audio;
 
      private void Start()
      {
-      if (useIndex)dissolveMaterial = dissolveMesh.materials[dissolveMeshIndex];
-      
+      if (useIndex) dissolveMaterial = dissolveMesh.materials[dissolveMeshIndex];
+
       dissolveMaterial.SetFloat(hashDissolve, startValue);
      }
-
-     private void Update()
+     public void PlayButton()
      {
-      if (Input.GetKeyDown(KeyCode.Space) && !isDissolving)
-      {
-       StartCoroutine(MakeDissolve());
-            Adissolve.Play();
-      }
+         StartCoroutine(MakeDissolve());
+         Adissolve.Play();
      }
-
-     private IEnumerator MakeDissolve()
+     
+     public IEnumerator MakeDissolve()
      {
       isDissolving = true;
 

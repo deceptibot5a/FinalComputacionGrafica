@@ -39,17 +39,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fresnel_Power: 2.5
-    - _Glitch_Scale: 1.19
-    - _Glitch_Strength: 0.34
-    - _Hologram_Scale: 50
-    - _Hologram_Speed: 0.0654
+    - _Fresnel_Power: 4.2
+    - _Glitch_Scale: 3.07
+    - _Glitch_Strength: -0.15
+    - _Hologram_Scale: 100
+    - _Hologram_Speed: 0.0515
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Use_Glitch: 1
     m_Colors:
-    - _Fresnel_Color: {r: 0, g: 0, b: 0, a: 1}
-    - _Main_Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Fresnel_Color: {r: 0, g: 0, b: 2.55, a: 1}
+    - _Main_Color: {r: 0, g: 0, b: 2.55, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4197496618925692149
 MonoBehaviour:

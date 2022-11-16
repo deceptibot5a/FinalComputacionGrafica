@@ -20,7 +20,14 @@ public class GlitchAnimation : MonoBehaviour
         _material = GetComponent<Renderer>().material;
         StartCoroutine(StartGlitch());
     }
-
+    
+    public void PlayGlitch()
+    {
+        _material = GetComponent<Renderer>().material;
+        StartCoroutine(StartGlitch());
+    }
+    
+    
     private IEnumerator StartGlitch()
     {
         while (true)
