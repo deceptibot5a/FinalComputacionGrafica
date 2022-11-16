@@ -13,6 +13,15 @@ public class Slider : MonoBehaviour
     [SerializeField] private ParticleSystem linea2;
     [SerializeField] private ParticleSystem linea3;
 
+    [SerializeField] private Material material1;
+    [SerializeField] private Material material2;
+
+    private void Start()
+    {
+        Material material1 = GetComponent<Renderer>().material;
+        Material material2 = GetComponent<Renderer>().material;
+    }
+
 
     public float red;
     public float green;
@@ -38,7 +47,9 @@ public class Slider : MonoBehaviour
     public void Update()
     {
         
-        
+        material1.SetColor("_Edge_Color", new Color(red*25500, green*25500, blue*25500));
+        material2.SetColor("_Main_Color", new Color(red*25500, green*25500, blue*25500));
+        material2.SetColor("_Fresnel_Color", new Color(red*25500, green*25500, blue*25500));
         
         mainColor = new Color(red*max, green*max, blue*max);
         var col = bola1.colorOverLifetime;

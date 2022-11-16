@@ -40,16 +40,16 @@ Material:
     m_Ints: []
     m_Floats:
     - _Fresnel_Power: 2.5
-    - _Glitch_Scale: 5
-    - _Glitch_Strength: 0.45
-    - _Hologram_Scale: 21.6
-    - _Hologram_Speed: 0.05
+    - _Glitch_Scale: 1.19
+    - _Glitch_Strength: 0.34
+    - _Hologram_Scale: 50
+    - _Hologram_Speed: 0.0654
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Use_Glitch: 1
     m_Colors:
-    - _Fresnel_Color: {r: 0.02352941, g: 1, b: 0.9012686, a: 0}
-    - _Main_Color: {r: 0, g: 0.63529414, b: 1.4980392, a: 1}
+    - _Fresnel_Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Main_Color: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4197496618925692149
 MonoBehaviour:
