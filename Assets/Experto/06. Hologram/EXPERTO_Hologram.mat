@@ -48,8 +48,8 @@ Material:
     - _QueueOffset: 0
     - _Use_Glitch: 1
     m_Colors:
-    - _Fresnel_Color: {r: 0, g: 0, b: 2.55, a: 1}
-    - _Main_Color: {r: 0, g: 0, b: 2.55, a: 1}
+    - _Fresnel_Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Main_Color: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4197496618925692149
 MonoBehaviour:
