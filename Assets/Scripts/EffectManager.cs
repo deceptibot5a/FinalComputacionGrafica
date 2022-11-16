@@ -25,4 +25,7 @@ public class EffectManager : MonoBehaviour
             characterMs[i].material = effects[2];
         }
     }
+    public void ExitButton() {
+        Application.Quit();
+    }
 }
